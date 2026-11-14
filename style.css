@@ -9,7 +9,8 @@ body{margin:0;font-family:'EB Garamond',Georgia,serif;font-size:16px;line-height
 
 /* ── Top bar ── */
 .topbar{background:var(--forest);position:sticky;top:0;z-index:100;border-bottom:.5px solid var(--gold-dim)}
-.topbar-main{padding:.9rem 1.25rem .75rem}
+.topbar-main{padding:.6rem 1.25rem;display:flex;align-items:center;gap:.8rem}
+.bar-logo{width:44px;height:44px;flex-shrink:0;border-radius:50%;object-fit:contain;box-shadow:0 0 0 1.5px rgba(201,168,76,.35)}
 .firm-name{font-family:'Cinzel',serif;font-size:1.1rem;font-weight:500;color:var(--gold-lt);letter-spacing:.06em;line-height:1.2}
 .firm-name .amp{color:var(--gold);font-style:italic;font-family:'Cormorant Garamond',serif}
 .firm-sub{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;margin-top:.15rem;color:rgba(201,168,76,.65)}
@@ -52,6 +53,7 @@ button[data-act=clear]{margin-top:12px;width:100%}
 #loginOverlay{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:var(--forest);background-image:radial-gradient(ellipse at 25% 20%,rgba(201,168,76,.12),transparent 55%),radial-gradient(ellipse at 75% 80%,rgba(201,168,76,.07),transparent 55%)}
 #loginOverlay.hidden{display:none}
 .login-card{width:100%;max-width:400px;margin:1rem;background:rgba(15,30,20,.75);border:1px solid rgba(201,168,76,.25);border-radius:16px;padding:2.5rem 2.25rem 2rem;text-align:center;backdrop-filter:blur(12px);box-shadow:0 0 0 1px rgba(201,168,76,.08),0 32px 80px rgba(0,0,0,.5)}
+.login-logo{display:block;width:92px;height:92px;margin:0 auto 1.3rem;border-radius:50%;object-fit:contain;box-shadow:0 4px 24px rgba(0,0,0,.4),0 0 0 6px rgba(201,168,76,.08)}
 .login-mono{width:84px;height:84px;margin:0 auto 1.3rem;border-radius:50%;border:2px solid rgba(201,168,76,.45);box-shadow:0 0 0 6px rgba(201,168,76,.08);display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:1.05rem;color:var(--gold-lt);letter-spacing:.04em}
 .login-firm{font-family:'Cinzel',serif;font-size:1.05rem;color:var(--gold-lt);letter-spacing:.1em}
 .login-sub{font-family:'Cinzel',serif;font-size:.55rem;color:rgba(201,168,76,.45);text-transform:uppercase;letter-spacing:.16em;margin-top:.4rem}
@@ -68,7 +70,8 @@ button[data-act=clear]{margin-top:12px;width:100%}
 @keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-6px)}40%{transform:translateX(6px)}60%{transform:translateX(-4px)}80%{transform:translateX(4px)}}
 
 /* ── Mobile ── */
-@media(max-width:900px){#app{grid-template-columns:1fr;padding:10px}#side{position:static;max-height:none;padding:12px}input,select,textarea{font-size:16px;padding:9px 10px}button{padding:10px 14px}button.x{padding:6px 12px}#doc{box-shadow:none;border:1px solid var(--line)}.topbar-main{padding:.75rem 1rem .65rem}}
+@media(max-width:420px){.login-logo,.login-mono{width:76px;height:76px}.bar-logo{width:38px;height:38px}}
+@media(max-width:900px){#app{grid-template-columns:1fr;padding:10px}#side{position:static;max-height:none;padding:12px}input,select,textarea{font-size:16px;padding:9px 10px}button{padding:10px 14px}button.x{padding:6px 12px}#doc{box-shadow:none;border:1px solid var(--line)}.topbar-main{padding:.55rem 1rem}}
 html.m #app{grid-template-columns:1fr;padding:10px}html.m #side{position:static;max-height:none;padding:12px}html.m input,html.m select,html.m textarea{font-size:16px;padding:9px 10px}html.m button{padding:10px 14px}html.m #doc{box-shadow:none;border:1px solid var(--line)}
 
 /* ── Print / PDF ── */
