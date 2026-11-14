@@ -2,13 +2,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"></head><body>
-<div id="loginOverlay"><div class="login-card"><div class="login-mono">SSR&amp;A</div>
+<div id="loginOverlay"><div class="login-card"><img class="login-logo" src="SSR_Logo_Cir.png" alt="SSR&amp;A" onerror="this.style.display='none';document.getElementById('loginMono').style.display='flex'"><div class="login-mono" id="loginMono" style="display:none">SSR&amp;A</div>
 <div class="login-firm">Syed Sibtain Razvi <span style="font-family:'Cormorant Garamond',serif;font-style:italic;color:#c9a84c">&amp;</span> Associates</div>
 <div class="login-sub">Advocates</div><div class="login-divider"></div>
 <div class="login-title">CAVEAT GENERATOR</div><div class="login-hint">Enter password to continue</div>
 <div class="login-field"><input id="loginPw" type="password" placeholder="Password" autocomplete="current-password"><button id="loginBtn">ENTER</button></div>
 <div class="login-error" id="loginErr"></div></div></div>
-<div class="topbar"><div class="topbar-main"><div class="firm-name">SSR <span class="amp">&amp;</span> A</div><div class="firm-sub">Caveat Petition Generator</div></div><div class="topbar-rule"></div></div><div id="app"><div id="side">
+<div class="topbar"><div class="topbar-main"><img class="bar-logo" src="SSR_Logo_Cir.png" alt="SSR&amp;A" onerror="this.style.display='none'"><div class="bar-text"><div class="firm-name">SSR <span class="amp">&amp;</span> A</div><div class="firm-sub">Caveat Petition Generator</div></div></div><div class="topbar-rule"></div></div><div id="app"><div id="side">
 
 <h2>Caveators</h2><div id="cav"></div><button data-act="add" data-g="cav">+ Add caveator</button>
 <label style="margin-top:10px">Gender of caveator<select id="gender" data-f="gender"><option value="M">Male</option><option value="F">Female</option></select></label><div class="hint" id="gnote"></div>
